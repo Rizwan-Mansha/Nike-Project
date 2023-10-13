@@ -22,7 +22,7 @@ import {
 } from "../../public/images";
 
 export const navLinks = [
-  { href: "/Home", label: "Home" },
+  { href: "/", label: "Home" },
   { href: "/About", label: "About Us" },
   { href: "/Products", label: "Products" },
   { href: "/Contact", label: "Contact Us" },

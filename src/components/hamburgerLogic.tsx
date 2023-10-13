@@ -4,10 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-
 import { navLinks } from "@/constants";
-import  hamburger  from "../../public/icons/hamburger.svg";
-import  cross  from "../../public/icons/cross-icon.svg";
+import hamburger from "../../public/icons/hamburger.svg";
+import cross from "../../public/icons/cross-icon.svg";
 
 const Hamburger: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +29,9 @@ const Hamburger: React.FC = () => {
             <button onClick={toggleOpen} className=" focus:outline-none ml-48 ">
               <Image src={cross} alt="cross" width={40} height={40} />
             </button>
-            {navLinks.map((item) => (
+            {navLinks.map((item, index) => (
               <Link
-              key={item.label}
+                key={index}
                 href={item.href}
                 className="block px-4 py-2 text-black hover:bg-gray-100">
                 <li>{item.label}</li>
