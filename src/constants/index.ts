@@ -22,17 +22,16 @@ import {
 } from "../../public/images";
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
-  { href: "#products", label: "Products" },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "/Home", label: "Home" },
+  { href: "/About", label: "About Us" },
+  { href: "/Products", label: "Products" },
+  { href: "/Contact", label: "Contact Us" },
 ];
 
 export const shoes = [
   {
     thumbnail: thumbnailShoe1,
     bigShoe: bigShoe1,
-    
   },
   {
     thumbnail: thumbnailShoe2,

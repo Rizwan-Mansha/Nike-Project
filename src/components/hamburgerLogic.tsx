@@ -32,6 +32,7 @@ const Hamburger: React.FC = () => {
             </button>
             {navLinks.map((item) => (
               <Link
+              key={item.label}
                 href={item.href}
                 className="block px-4 py-2 text-black hover:bg-gray-100">
                 <li>{item.label}</li>
