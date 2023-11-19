@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { offer } from "../../public/images";
-import Button from "@/components/Button";
+import Button from "@/components/CustomButton";
 import { arrowRight } from "../../public/icons";
 
 const SpecialOffer = () => {

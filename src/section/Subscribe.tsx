@@ -1,4 +1,4 @@
-import Button from "@/components/Button";
+import Button from "@/components/CustomButton";
 
 const Subscribe = () => {
   return (
@@ -17,6 +17,6 @@ const Subscribe = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Subscribe
+export default Subscribe;

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-
 import { navLinks } from "@/constants";
 import hamburger from "../../public/icons/hamburger.svg";
 import cross from "../../public/icons/cross-icon.svg";
@@ -16,7 +15,7 @@ const Hamburger: React.FC = () => {
   };
 
   return (
-    <div className="relative ">
+    <div className="">
       <button onClick={toggleOpen} className="focus:outline-none ">
         <div>
           <Image src={hamburger} alt="Hamburger" width={25} height={25} />
@@ -24,16 +23,18 @@ const Hamburger: React.FC = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute  -top-10 -right-16 mt-2 w-56 min-h-screen  bg-white border border-gray-200 rounded shadow-lg">
+        <div className="fixed inset-y-0 right-0 w-1/2 z-20 bg-gray-300 overflow-y-auto">
           <ul className="">
-            <button onClick={toggleOpen} className=" focus:outline-none ml-48 ">
+            <button
+              onClick={toggleOpen}
+              className=" focus:outline-none ml-[75%] mt-5">
               <Image src={cross} alt="cross" width={40} height={40} />
             </button>
             {navLinks.map((item, index) => (
               <Link
                 key={index}
                 href={item.href}
-                className="block px-4 py-2 text-black hover:bg-gray-100">
+                className="block  py-2 px-[10%] text-black hover:bg-gray-100">
                 <li>{item.label}</li>
               </Link>
             ))}

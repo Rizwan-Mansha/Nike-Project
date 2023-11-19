@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./CustomButton";
 import Nav from "./Nav";
 import ShoeCard from "./ShoeCard";
 import PopularProductCard from "./PopularProductCard";
